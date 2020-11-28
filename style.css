@@ -1,0 +1,1381 @@
+/*font-family: 'Roboto', sans-serif;
+font-family: 'Poppins', sans-serif;.............................
+.........................................................*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*border: 1px solid gray;*/
+}
+
+body {
+    font-family: 'Roboto', sans-serif
+}
+
+a {
+    text-decoration: none;
+    transition: .4s;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+header {
+    background-image: url(images/blue-background.gif);
+    background-size: cover;
+}
+
+/*---Main menu---*/
+.main-menu {
+    padding-top: 20px;
+}
+
+.logo {
+    margin-left: 60px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.hamburgarmeny {
+    display: none;
+}
+
+.menu {
+    font-family: 'Roboto', sans-serif;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.menu ul li a:hover {
+    color: #FFBB00;
+}
+
+.button {
+    color: #ffffff;
+    padding: 10px 15px;
+    text-decoration: none;
+    background-color: #FFBB00;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
+
+.menu-active {
+    position: relative;
+}
+
+.menu-active span {
+    color: #FFBB00;
+}
+
+.menu-active:after {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 0px;
+    width: 30px;
+    height: 2px;
+    background-color: #FFBB00;
+}
+
+/*---first section---*/
+.first-section-mobile-image {
+    flex-basis: 40%;
+    padding-top: 30px;
+}
+
+.first-section-textbox {
+    order: -1;
+    flex-basis: 50%;
+    margin: 0px auto;
+    padding-left: 90px;
+    padding-bottom: 40px;
+
+}
+
+.first-section-textbox h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 55px;
+    font-weight: bold;
+    color: #ffffff;
+    line-height: 1.3;
+}
+
+.first-section-text {
+    padding: 20px 0;
+}
+
+.first-section-textbox p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: #ffffff;
+
+}
+
+.first-section-textbox a {
+    background-color: transparent;
+    font-family: 'Roboto', sans-serif;
+}
+
+.Download-border {
+    border: 1px solid #ffffff;
+}
+
+.first-section-textbox .Download-border a:hover {
+    background-color: #fff;
+    color: #3699fe;
+}
+
+.first-section-textbox i {
+    color: #FFBB00;
+    font-size: large;
+}
+
+.first-section-button {
+    display: flex;
+}
+
+.video {
+    display: inline;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#video-button {
+    padding-left: 20px;
+    display: flex;
+    margin: auto 0;
+}
+
+
+/*---logo section---*/
+
+.logo-section {
+    margin-top: 10px;
+}
+
+.logo-section img {
+    padding: 0 15px;
+}
+
+.owl-carousel {
+    width: auto;
+}
+
+.logo-section .container {
+    display: block;
+}
+
+/*---AboutUs-section---*/
+.AboutUs-section {
+    margin: 70px auto;
+
+}
+
+.AboutUs-section-pic {
+    flex-basis: 40%;
+}
+
+.AboutUs-section-textbox {
+    flex-basis: 50%;
+    margin: auto;
+}
+
+.AboutUs-section-textbox h2 {
+    font-size: 40px;
+    color: #333333;
+    margin-right: 120px;
+}
+
+.AboutUs-section-textbox p {
+    font-size: 16px;
+    color: #8A8A8A;
+    line-height: 1.8;
+}
+
+.AboutUs-section-textbox-button {
+    display: flex;
+}
+
+.AboutUs-section-textbox-button a {
+    padding: 15px 10px;
+}
+
+/*---Features---*/
+.Features {
+    background-color: #F5F5F5;
+    background-image: url(images/Group\ 4499.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 50px 0;
+}
+
+.Features-pic {
+    flex-basis: 35%;
+}
+
+.Features-textbox {
+    flex-basis: 50%;
+    margin-left: 180px;
+    order: -1;
+
+}
+
+.Features-textbox h2 {
+    font-size: 40px;
+    padding-right: 120px;
+    color: #333333;
+}
+
+.Features-textbox>p {
+    padding: 15px 0;
+    font-size: 14px;
+    color: #8A8A8A;
+    line-height: 1.5;
+}
+
+.text-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.text-container-box {
+    flex-basis: 50%;
+    display: flex;
+    padding: 10px;
+}
+
+.text-container-box h5 {
+    font-size: 20px;
+    color: #333333;
+
+}
+
+.text-container-box p {
+    font-size: 12px;
+    color: #8A8A8A;
+}
+
+.text-container-box-image {
+    flex: 33%;
+}
+
+
+/*---Application Screens---*/
+
+.Application-Screens-section {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.Application-Screens-section h2 {
+    color: #333333;
+    font-size: 40px;
+    padding-bottom: 40px;
+}
+
+.Application-Screens-section p {
+    color: #8A8A8A;
+    padding: 5px 0;
+}
+
+.owl-carousel {
+    width: 100%;
+}
+
+.owl-carousel .owl-stage-outer {
+    padding-top: 50px;
+}
+
+.owl-carousel .item {
+    transform: scale(0.7);
+}
+
+.owl-carousel .center {
+    transform: scale(1.3);
+}
+
+/*---Statistics-section---*/
+.Statistics-section {
+    background-image: url(images/Layer\ 815.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.Statistics-section-textbox {
+
+    margin: auto;
+}
+
+.Statistics-section-textbox h5 {
+    font-size: 40px;
+    padding: 20px 0;
+    color: #333333;
+}
+
+.Statistics-section-textbox>p {
+    color: #8A8A8A;
+}
+
+.statistic {
+    display: flex;
+    margin-top: 50px;
+
+}
+
+.number {
+    font-size: 40px;
+    font-weight: bold;
+    color: #3096FE;
+}
+
+.text {
+    color: #333333;
+    font-size: 25px;
+}
+
+.statistics-row {
+    margin: auto;
+    padding: 0 80px;
+    text-align: center;
+}
+
+/*---Download-section---*/
+.Download-section {
+    background-image: url(images/Bg.png);
+    background-size: cover;
+}
+
+.Download-section-textbox {
+    flex-basis: 60%;
+    color: #ffffff;
+}
+
+.Download-section-textbox h4 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.Download-section-pic {
+    flex-basis: 40%;
+}
+
+.Download-section-pic img {
+    margin-bottom: -5px;
+    padding-top: 50px;
+}
+
+.Download-section-textbox p {
+    padding: 20px 0;
+    padding-right: 100px;
+}
+
+.Download-section-button {
+    display: flex;
+}
+
+.Download-section-button a {
+    padding-top: 15px;
+
+}
+
+.app-store {
+    padding-left: 10px;
+}
+
+
+/*---form---*/
+.form-section {
+    text-align: center;
+    padding: 50px;
+}
+
+.form-section h4 {
+    color: #333333;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.form-section p {
+    color: #8A8A8A;
+    font-size: 16px;
+}
+
+form {
+    width: 100%;
+    margin: 50px 50px 0 50px;
+}
+
+form input {
+    flex-basis: 48%;
+    padding: 15px;
+    background-color: #FBFBFB;
+    border-radius: 10px;
+    border: none;
+}
+
+form textarea {
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #FBFBFB;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+form button {
+    background-color: #3096FE;
+    color: #ffffff;
+    padding: 10px 45px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+form button:hover {
+    opacity: 1;
+}
+
+form input,
+form textarea {
+    transition: 0.5s;
+}
+
+form input:focus,
+form textarea:focus {
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
+    border: 0px;
+    outline: none;
+}
+
+/*---footer---*/
+footer {
+    background-image: url(images/Footer.png);
+    text-align: center;
+    background-size: cover;
+    padding: 25px 0;
+}
+
+.social-media i {
+    color: #ffffff;
+    font-size: large;
+    text-align: center;
+    margin: auto 0;
+}
+
+.social-media {
+    padding: 15px 0;
+}
+
+.social-media a {
+    padding: 0 25px;
+}
+.social-media a:hover i{
+    color: #FFBB00;
+}
+
+.footer-menu {
+    padding: 20px 0;
+}
+
+.footer-menu ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.footer-menu ul li a {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.footer-menu ul li a:hover {
+    color: #FFBB00;
+}
+
+.social-media a {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    padding: 9px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.10);
+    border-radius: 10px;
+}
+
+
+
+/*---<Responsive>---*/
+@media screen and (max-width: 1200px) {
+
+    header {
+        background-image: url(images/1100.png);
+        background-size: cover;
+    }
+
+    .container {
+        padding: 0 35px;
+    }
+
+    .first-section-button {
+        padding-left: 30px;
+    }
+
+    .aboutus-icon {
+        max-width: 40%;
+    }
+
+
+    /*---Features---*/
+
+    .Features-pic {
+        flex-basis: 45%;
+    }
+
+    .Features-textbox {
+        flex-basis: 50%;
+        margin-left: 0px;
+        padding-left: 25px;
+    }
+
+    .Features-textbox h2 {
+        font-size: 35px;
+        padding-right: 0px;
+    }
+
+    .text-container-box h5 {
+        font-size: 15px;
+    }
+
+    .text-container-box p {
+        font-size: 11px;
+    }
+
+    .text-container-box-image {
+        flex: 33%;
+    }
+
+    /*---Statistics-section---*/
+    .Statistics-section-textbox h5 {
+        font-size: 30px;
+    }
+
+    .statistic {
+        margin-top: 20px;
+    }
+
+    .number {
+        font-size: 30px;
+        font-weight: bold;
+        color: #3096FE;
+    }
+
+    .text {
+        color: #333333;
+        font-size: 25px;
+    }
+
+    .statistics-row {
+        margin: auto;
+        padding: 0 40px;
+        text-align: center;
+    }
+
+}
+
+    @media screen and (max-width: 992px) {
+        .container {
+            padding: 0 20px;
+        }
+
+        header {
+            background-image: url(images/800.png);
+            background-size: cover;
+        }
+
+        /*---menu-section---*/
+        .hamburgarmeny {
+            display: block;
+            font-size: xx-large;
+            padding-right: 25px;
+            color: #ffffff;
+        }
+
+        .main-menu .menu {
+            display: none;
+        }
+
+        .logo {
+            margin-left: 40px;
+        }
+
+        /*---first-section---*/
+        .first-section-mobile-image {
+            flex-basis: 35%;
+            padding-top: 30px;
+        }
+
+
+        .first-section-textbox {
+            flex-basis: 55%;
+            margin: 0px auto;
+            padding-left: 90px;
+
+        }
+
+        .first-section-textbox h1 {
+            font-size: 35px;
+            line-height: 1.1;
+        }
+
+        .first-section-textbox p {
+            font-size: 12px;
+        }
+
+        .first-section-textbox i {
+            font-size: medium;
+        }
+
+        .first-section-textbox .button {
+            padding: 8px 12px;
+            border-radius: 8px;
+        }
+
+        /*---logo-section---*/
+        .logo-section {
+            display: block;
+        }
+
+        /*---AboutUs-section---*/
+        .AboutUs-section {
+            margin: 30px auto;
+
+        }
+
+        .aboutus-icon {
+            max-width: 30%;
+        }
+
+        .AboutUs-section-pic {
+            flex-basis: 40%;
+        }
+
+        .AboutUs-section-textbox {
+            flex-basis: 50%;
+            margin: auto;
+        }
+
+        .AboutUs-section-textbox h2 {
+            font-size: 30px;
+            margin-right: 0;
+        }
+
+        .AboutUs-section-textbox p {
+            line-height: 1.1;
+            font-size: 16px;
+            padding-top: 10px;
+        }
+
+        .AboutUs-section-textbox-button a {
+            margin: 20px 15px;
+            padding: 5px 0;
+        }
+
+        .AboutUs-section-textbox-button-pic {
+            margin: auto 5px;
+        }
+
+        /*---Features---*/
+        .Features {
+            background-color: #F5F5F5;
+            background-image: none;
+        }
+
+        .Features-pic {
+            flex-basis: 45%;
+        }
+
+        .Features-textbox {
+            flex-basis: 50%;
+            margin-left: 0px;
+
+        }
+
+        .Features-textbox h2 {
+            font-size: 35px;
+            padding-right: 0px;
+        }
+
+        .text-container-box h5 {
+            font-size: 15px;
+        }
+        
+
+        .text-container-box p {
+            font-size: 13px;
+        }
+
+        .text-container-box-image {
+            flex: 33%;
+        }
+
+        /*---Application-Screens-section---*/
+
+        .Application-Screens-section {
+            display: block;
+            margin-top: 30px;
+        }
+
+        .Application-Screens-section h2 {
+            font-size: 30px;
+            padding-bottom: 10px;
+        }
+
+        .Application-Screens-section p {
+            font-size: 13px;
+            padding: 2px 0;
+        }
+
+        /*---Statistics-section---*/
+        .Statistics-section {
+            display: block;
+        }
+
+        .Statistics-section-textbox h5 {
+            font-size: 30px;
+            padding: 15px 0;
+        }
+
+        .Statistics-section-textbox>p {
+            font-size: 14px;
+        }
+
+        .statistic {
+            margin-top: 20px;
+        }
+
+        .number {
+            font-size: 25px;
+        }
+
+        .text {
+            font-size: 16px;
+        }
+
+        .statistics-row {
+            padding: 0 30px;
+        }
+
+        /*---Download-section---*/
+
+        .Download-section-textbox {
+            padding-top: 30px;
+            flex-basis: 55%;
+        }
+
+        .Download-section-textbox h4 {
+            font-size: 25px;
+        }
+
+        .Download-section-pic {
+            flex-basis: 40%;
+        }
+
+        .Download-section-pic img {
+            margin-bottom: -5px;
+            padding-top: 50px;
+        }
+
+        .Download-section-textbox p {
+            font-size: 13px;
+            padding: 10px 0;
+            padding-right: 0px;
+        }
+
+        .app-store {
+            padding-left: 20px;
+        }
+
+        /*---form---*/
+        .form-section {
+            padding: 20px;
+        }
+
+        .form-section h4 {
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        .form-section p {
+            font-size: 13px;
+        }
+
+        form {
+
+            margin: 20px 20px 0 20px;
+        }
+
+        /*---footer---*/
+        footer {
+            padding: 10px 0;
+        }
+
+        .social-media {
+            padding: 15px 0;
+        }
+
+
+        .footer-menu {
+            padding: 10px 0;
+        }
+
+        .footer-menu ul li {
+            margin: 0 5px;
+        }
+
+        .footer-menu ul li a {
+            font-size: 13px;
+        }
+
+        .social-media a {
+            padding: 6px;
+            border-radius: 8px;
+        }
+
+    }
+
+    @media screen and (max-width: 760px) {
+
+        header {
+            background-image: url(images/760.png);
+            background-size: cover;
+        }
+
+        .logo {
+            margin-left: 30px;
+        }
+
+        /*---first-section---*/
+
+        .first-section-textbox {
+            flex-basis: 60%;
+            padding-left: 40px;
+
+        }
+
+        .first-section-textbox h1 {
+            font-size: 30px;
+        }
+
+        .first-section-textbox i {
+            font-size: medium;
+        }
+
+        .first-section-textbox .button {
+            padding: 4px 8px;
+            border-radius: 8px;
+            font-size: 13px;
+        }
+
+        .first-section-button {
+            padding-left: 50px;
+        }
+
+        /*---AboutUs-section---*/
+        .AboutUs-section {
+            margin: 40px auto;
+
+        }
+
+        .aboutus-icon {
+            max-width: 20%;
+        }
+
+        .AboutUs-section-pic {
+            flex-basis: 45%;
+        }
+
+
+        .AboutUs-section-textbox h2 {
+            font-size: 20px;
+        }
+
+        .AboutUs-section-textbox p {
+            line-height: 15px;
+            font-size: 14px;
+            padding-top: 8px;
+        }
+
+        .AboutUs-section-textbox-button a {
+            margin: 20px 15px;
+            padding: 5px 0;
+        }
+
+        .AboutUs-section-textbox-button-text h6 {
+            font-size: 15px;
+        }
+
+        /*---Features---*/
+
+        .Features-pic {
+            flex-basis: 45%;
+        }
+
+        .Features-textbox {
+            flex-basis: 50%;
+        }
+
+        .Features-textbox h2 {
+            font-size: 25px;
+            padding-right: 0px;
+        }
+
+        .Features-textbox>p {
+            font-size: 14px;
+            line-height: 15px;
+        }
+
+        .text-container-box h5 {
+            font-size: 13px;
+        }
+
+        .text-container-box p {
+            font-size: 11px;
+        }
+
+        .text-container-box-image {
+            flex: 45%;
+        }
+
+        .text-container-box {
+            padding: 5px 0px;
+        }
+
+        .text-container-box-image img {
+            padding-right: 8px;
+        }
+
+        /*---Application-Screens-section---*/
+
+        .Application-Screens-section {
+            margin-top: 20px;
+        }
+
+        .Application-Screens-section h2 {
+            font-size: 25px;
+            padding-bottom: 10px;
+        }
+
+        .Application-Screens-section p {
+            font-size: 14px;
+        }
+
+        /*---Statistics-section---*/
+
+
+        .Statistics-section-textbox h5 {
+            font-size: 25px;
+            padding: 15px 0;
+        }
+
+        .Statistics-section-textbox>p {
+            font-size: 14px;
+        }
+
+        .number {
+            font-size: 18px;
+        }
+
+        .text {
+            font-size: 12px;
+        }
+
+        .statistics-row {
+            padding: 0 15px;
+        }
+
+        /*---Download-section---*/
+
+        .Download-section-textbox {
+            padding-top: 20px;
+        }
+
+        .Download-section-textbox h4 {
+            font-size: 20px;
+        }
+
+
+        .Download-section-textbox p {
+            font-size: 14px;
+            padding: 10px 0;
+            padding-right: 0px;
+        }
+
+        /*---form---*/
+        form {
+            padding: 0;
+        }
+
+        .form-section {
+            padding-top: 20px;
+        }
+
+        .form-section h4 {
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+
+        .form-section p {
+            font-size: 14px;
+        }
+
+        form {
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        form .container {
+            padding: 0;
+        }
+
+        form input {
+            flex-basis: 48%;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 3px;
+        }
+
+        form textarea {
+            margin-top: 10px;
+            border-radius: 4px;
+        }
+
+        /*---footer---*/
+        footer {
+            padding-top: 20px;
+        }
+
+        .foot-logo img {
+            width: 20%;
+        }
+
+        .social-media {
+            padding: 5px 0;
+        }
+
+
+        .footer-menu {
+            padding: 5px 0;
+        }
+
+        .footer-menu ul li {
+            margin: 0 5px;
+        }
+
+        .footer-menu ul li a {
+            font-size: 12px;
+        }
+
+        .social-media a {
+            width: 30px;
+            height: 30px;
+            padding: 3px;
+            border-radius: 4px;
+            margin: 0 10px;
+        }
+
+        .social-media i {
+            font-size: medium;
+        }
+    }
+
+    @media screen and (max-width: 568px) {
+
+        header {
+            background-image: url(images/600.png);
+            background-size: cover;
+        }
+
+        .logo {
+            margin-left: 10px;
+        }
+
+        .logo img {
+            width: 80%;
+        }
+
+        /*---first-section---*/
+        .first-section-mobile-image {
+            flex-basis: 35%;
+            padding-top: 20px;
+        }
+
+        .first-section-textbox {
+            padding-left: 0px;
+            padding-top: 40px;
+        }
+
+        .first-section-textbox h1 {
+            font-size: 20px;
+        }
+
+        .first-section-textbox p {
+            font-size: 14px;
+            line-height: 1.2;
+        }
+
+        .first-section-textbox i {
+            font-size: small;
+        }
+
+        .first-section-textbox .button {
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 10px;
+        }
+
+        .first-section-button {
+            padding-left: 0px;
+        }
+
+        /*---logo section---*/
+        .logo-section {
+            margin-top: 25px;
+        }
+
+        .owl-carousel .owl-stage-outer {
+            padding-top: 0px;
+        }
+
+        /*---AboutUs-section---*/
+        .AboutUs-section{
+            background-image: url(images/about-us-mobil5.png);
+            background-size: contain;
+            background-position: center;
+        }
+        .AboutUs-section .container {
+            display: block;
+        }
+
+        .AboutUs-section-pic {
+            display: none;
+        }
+
+        .AboutUs-section-textbox h2 {
+            font-size: 30px;
+            text-align: center;
+            padding: 25px 0;
+        }
+
+        .AboutUs-section-textbox p {
+            font-size: 16px;
+            text-align: justify;
+            line-height: 23px;
+        }
+
+        .AboutUs-section-textbox-button a {
+            margin: 20px auto;
+        }
+
+        .AboutUs-section-textbox-button a img {
+            width: 90%;
+        }
+
+        /*---Features---*/
+        .Features .container {
+            display: block;
+        }
+
+        .Features-pic {
+            order: -1;
+        }
+
+        .Features-textbox {
+            padding-left: 0;
+        }
+
+        .Features-textbox h2 {
+            text-align: center;
+        }
+
+        .Features-textbox>p {
+            font-size: 16px;
+            line-height: 25px;
+        }
+
+        .text-container-box {
+            display: block;
+            align-items: center;
+        }
+
+        .text-container-box-desc h5 {
+            font-size: 14px;
+            padding-bottom: 5px;
+        }
+
+        .text-container-box-desc p {
+            font-size: 11px;
+        }
+
+        /*---Statistics-section---*/
+
+        .Statistics-section-textbox h5 {
+            font-size: 25px;
+            padding: 15px 0;
+        }
+
+        .Statistics-section-textbox>p {
+            font-size: 14px;
+        }
+
+        .statistic {
+            display: flex;
+            flex-basis: 50%;
+            flex-wrap: wrap;
+        }
+
+        .number {
+            font-size: 20px;
+        }
+
+        .text {
+            font-size: 15px;
+        }
+
+        .statistics-row {
+            padding: 15px ;
+        }
+
+        /*---Download-section---*/
+
+        .Download-section-pic {
+            display: none;
+        }
+
+        .Download-section-textbox {
+            flex-basis: 100%;
+        }
+
+        .Download-border {
+            text-align: center;
+        }
+
+        .Download-section-textbox h4 {
+            font-size: 25px;
+            padding: 0 10px;
+            text-align: center;
+        }
+
+        .Download-section-textbox p {
+            font-size: 14px;
+
+        }
+
+        .Download-section-button a {
+            margin: 20px auto;
+            padding-top: 0;
+
+        }
+
+        .Download-section-button a img {
+            width: 90%;
+        }
+
+        /*---form---*/
+        .form-section {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .form-section h4 {
+            font-size: 30px;
+        }
+
+        .form-section p {
+            font-size: 14px;
+            text-align: center;
+        }
+
+        form {
+            width: 100%;
+            margin: 10px 10px 0 10px;
+        }
+
+        form input {
+            flex-basis: 100%;
+            padding: 15px;
+            border-radius: 3px;
+        }
+
+        form textarea {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #FBFBFB;
+            border-radius: 3px;
+        }
+
+        form button {
+            background-color: #3096FE;
+            color: #ffffff;
+            padding: 10px 45px;
+            border: none;
+            border-radius: 10px;
+            margin-top: 15px;
+            cursor: pointer;
+            opacity: 0.8;
+            transition: 0.5s;
+        }
+
+
+    }
+    @media screen and (max-width: 395px){
+        #video-button {
+            padding-left: 3px;
+        }
+        #video-button p{
+            font-size: 8px;
+        }
+        #video-button i{
+            font-size: x-small;
+        }
+        .first-section-textbox p{
+            font-size: 10px;
+            padding: 10px 0;
+        }
+
+
+
+
+    }
