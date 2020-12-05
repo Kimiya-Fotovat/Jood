@@ -9,8 +9,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+
+    <!-- OWL Carousel -->
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Style -->
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -40,7 +46,8 @@
         <section class="first-section">
             <div class="container">
                 <div class="first-section-mobile-image">
-                    <img src="images/Mobile.png" alt="">
+                    <img src="images/Mobile.png" alt="" data-aos="fade-left" data-aos-easing="linear"
+                    data-aos-duration="2000" data-aos-duration="4000">
                 </div>
                 <div class="first-section-textbox">
                     <h1>Creative Way to Showcase Your App</h1>
@@ -173,19 +180,19 @@
                 <p>Lorem Ipsum has been the industry's</p>
                 <div class="statistic">
                     <div class="statistics-row">
-                        <p class="number">+ 1430</p>
+                        <p class="number counter">+ 1,430</p>
                         <p class="text">Clients</p>
                     </div>
                     <div class="statistics-row">
-                        <p class="number">+ 2430</p>
+                        <p class="number counter">+ 2,430</p>
                         <p class="text">Beneficiaries</p>
                     </div>
                     <div class="statistics-row">
-                        <p class="number">+ 1430</p>
+                        <p class="number counter">+ 1,430</p>
                         <p class="text">positive reviews</p>
                     </div>
                     <div class="statistics-row">
-                        <p class="number">+ 10.430</p>
+                        <p class="number counter">+ 10.430</p>
                         <p class="text">Downloads</p>
                     </div>
                 </div>
@@ -263,6 +270,10 @@
 
     <!---carousel jquery--->
     <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/counter-up2.js"></script>
+
     <script src="js/owl.carousel.min.js"></script>
 
     <script>
@@ -314,6 +325,35 @@
                 }
             }
         })
+
+
+        //AOS
+        AOS.init();
+
+        //CounterUp2
+        jQuery(function ($) {
+        "use strict";
+
+        var counterUp = window.counterUp["default"]; // import counterUp from "counterup2"
+
+        var $counters = $(".counter");
+
+        /* Start counting, do this on DOM ready or with Waypoints. */
+        $counters.each(function (ignore, counter) {
+            var waypoint = new Waypoint( {
+                element: $(this),
+                handler: function() {
+                    counterUp(counter, {
+                        duration: 2000,
+                        delay: 16
+                    });
+                    this.destroy();
+                },
+                offset: 'bottom-in-view',
+            } );
+        });
+
+    });
     </script>
 </body>
 
